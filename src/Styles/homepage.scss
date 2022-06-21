@@ -1,0 +1,287 @@
+.home1 {
+  background: url("../img/home1bg.png") no-repeat center center/cover;
+  background-position: center;
+  height: 80vh;
+  .home1Container {
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .home1content {
+      margin-top: 5rem;
+      h1 {
+        color: #ff0606;
+        font-size: 4.37rem;
+        margin-bottom: 1rem;
+      }
+      .b-2 {
+        font-size: 2.5rem;
+        color: #0f7009;
+        margin-bottom: 1rem;
+        @media screen and (max-width: 450px) {
+          font-size: 2.3rem;
+        }
+      }
+      .h1-text {
+        color: #45351b;
+        font-size: 1.7rem;
+        width: 45ch;
+        margin-bottom: 1rem;
+        @media screen and (max-width: 450px) {
+          font-size: 1.5rem;
+        }
+        @media screen and (max-width: 300px) {
+          width: 30ch;
+        }
+      }
+      .h1-btn {
+        border: none;
+        outline: none;
+        font-size: 1.6rem;
+        margin-top: 2rem;
+        text-transform: uppercase;
+        color: #ffffff;
+        border-radius: 5px;
+        background: #0f7909;
+        padding: 1rem 1.5rem;
+        @media screen and (max-width: 450px) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+.home2 {
+  background: #fbf7f7;
+  .aboutContainer {
+    h1 {
+      color: #ff0606;
+    }
+    .AboutContents {
+      .Content1 {
+        p {
+          color: #45351b;
+          line-height: 2.3rem;
+        }
+      }
+    }
+  }
+}
+.home3 {
+  background: #fbf7f7;
+  padding-bottom: 4rem;
+  h1 {
+    color: #ff0606;
+  }
+  .home3grid {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .service-grid {
+      display: grid;
+      gap: 2.5rem;
+      grid-template-columns: repeat(2, 1fr);
+      @media screen and (max-width: 750px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .box1 {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        background-color: #ffffff;
+        padding: 2rem 1rem;
+        p {
+          width: 45ch;
+          color: #45351b;
+          @media screen and (max-width: 300px) {
+            width: 30ch;
+          }
+        }
+      }
+    }
+  }
+}
+
+.home4 {
+  background: #0f79091a;
+  h1 {
+    color: #ff0606;
+  }
+  p {
+    color: #45351b;
+  }
+  .hom4-img-Container {
+    margin-top: 4rem;
+    .img1 {
+      margin: 3rem 0;
+      p {
+        font-weight: 600;
+        color: #45351b;
+        @media screen and (max-width: 360px) {
+          font-size: 1.2rem !important;
+        }
+      }
+      .small {
+        margin-top: -7%;
+        color: #45351b;
+        @media screen and (max-width: 360px) {
+          font-size: 1rem !important;
+          margin-top: -10%;
+        }
+      }
+    }
+  }
+}
+.home5 {
+  background: #ffffff;
+  h1 {
+    color: #ff0606;
+    margin-bottom: 3rem;
+  }
+  .contact-img {
+    @media screen and (max-width: 1024px) {
+      width: 50% !important;
+    }
+    @media screen and (max-width: 550px) {
+      width: 100% !important;
+    }
+  }
+  .hr {
+    margin-right: 3rem;
+  }
+  .join {
+    p {
+      font-size: 2.5rem;
+      color: #45351b;
+      @media screen and (max-width: 1240px) {
+        font-size: 1.7rem;
+      }
+    }
+    form {
+      padding: 1rem;
+      margin-top: 4rem;
+      .user-box {
+        position: relative;
+        input {
+          width: 100%;
+          outline: none;
+          border: none;
+          padding: 0.5rem 0rem;
+          font-size: 1.7rem;
+          color: #45351b;
+          margin-bottom: 1rem;
+          border-bottom: 1px solid #45351b;
+          background: transparent;
+          &:focus ~ label,
+          &:valid ~ label {
+            top: -15px;
+            left: 0;
+            color: #45351b;
+            font-size: 0.9rem;
+          }
+        }
+        label {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 10px 0;
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: #0d1933;
+          pointer-events: none;
+          transition: 0.5s;
+        }
+      }
+      .phone {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media screen and (max-width: 450px) {
+          gap: 1rem;
+        }
+        input {
+          width: 100%;
+        }
+      }
+      .condition {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      .btnContact {
+        text-align: center;
+        margin-top: 3rem;
+        button {
+          padding: 0.5rem 1.5rem;
+          text-transform: capitalize;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          font-size: 1.5rem;
+          background: #ff0606;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.home6 {
+  background: #45351b;
+  .end {
+    color: #ffffff;
+    .socal {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      .icon {
+        color: #ffffff;
+        width: 30px;
+        font-size: 2rem;
+        padding: 0.5rem;
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin-right: 1rem;
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    .footerimg {
+      @media screen and (max-width: 540px) {
+        display: none;
+      }
+    }
+    .footerlist {
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        li {
+          a {
+            color: #ffffff;
+            text-decoration: none;
+            @media screen and (max-width: 540px) {
+              font-size: 1.1rem !important;
+            }
+            @media screen and (max-width: 300px) {
+              font-size: 0.7rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
