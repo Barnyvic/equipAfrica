@@ -16,9 +16,9 @@ AOS.init();
 
 const HomePage = () => {
   return (
-    <div className="">
+    <div>
       <Navbar />
-      <div className="home1">
+      <div id="Home" className="home1">
         <div className="home1Container">
           <div className="container home1content p-3">
             <h1 className="font-weight-bold h1">equipAFRICA</h1>
@@ -32,9 +32,9 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="home2">
+      <div id="About" className="home2">
         <div className="aboutContainer container p-3">
-          <h1 className="text-center text-uppercase font-weight-bold h1">
+          <h1 className="text-center text-uppercase mt-4 font-weight-bold h1">
             About us
           </h1>
           <div className="AboutContents p-2 d-flex flex-column flex-md-row gap-md-3 flex-lg-row gap-lg-3">
@@ -77,7 +77,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="home3">
+      <div id="Services" className="home3">
         <div className="container p-3">
           <h1 className="text-center text-uppercase font-weight-bold h1 mb-5">
             Services
@@ -168,7 +168,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="home5 p-5">
+      <div id="Join" className="home5 p-5">
         <div className="container p-3">
           <h1 className="text-center text-uppercase font-weight-bold h1">
             join us

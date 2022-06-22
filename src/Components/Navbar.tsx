@@ -9,30 +9,30 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
 
   return (
-    <>
+    <div className="nav-Container">
       <nav className="navbar">
         <div className="nav-container">
-          <a href="/" className="nav-logo">
+          <a href="#Home" className="nav-logo">
             <img src={navLogo} className="img-fluid" alt="logo" />
           </a>
           <ul className="nav-menu">
             <li className="nav-item">
-              <a href="/" className="nav-links" onClick={handleClick}>
+              <a href="#Home" className="nav-links" onClick={handleClick}>
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a href="/about" className="nav-links" onClick={handleClick}>
+              <a href="#About" className="nav-links" onClick={handleClick}>
                 About-us
               </a>
             </li>
             <li className="nav-item">
-              <a href="/blog" className="nav-links" onClick={handleClick}>
+              <a href="#Services" className="nav-links" onClick={handleClick}>
                 Services
               </a>
             </li>
             <li className="nav-item">
-              <a href="/contact" className="nav-links" onClick={handleClick}>
+              <a href="#Join" className="nav-links" onClick={handleClick}>
                 Join-Us
               </a>
             </li>
@@ -44,26 +44,26 @@ const Navbar = () => {
             <div>
               <ul className="nav-menu-active">
                 <li className="nav-item">
-                  <a href="/" className="nav-links" onClick={handleClick}>
+                  <a href="#Home" className="nav-links" onClick={handleClick}>
                     Home
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="/about" className="nav-links" onClick={handleClick}>
+                  <a href="#About" className="nav-links" onClick={handleClick}>
                     About-us
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="/blog" className="nav-links" onClick={handleClick}>
+                  <a
+                    href="#Services"
+                    className="nav-links"
+                    onClick={handleClick}
+                  >
                     Services
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    href="/contact"
-                    className="nav-links"
-                    onClick={handleClick}
-                  >
+                  <a href="#Join" className="nav-links" onClick={handleClick}>
                     Join-Us
                   </a>
                 </li>
@@ -72,7 +72,7 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 
