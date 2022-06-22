@@ -1,8 +1,8 @@
 import React from "react";
-import AboutImg from "../img/Aboutimg.png";
-import Img1 from "../img/Ellipse 4.png";
-import Img2 from "../img/Ellipse 1.png";
-import Img3 from "../img/Ellipse 3.png";
+import AboutImg from "../img/home2.png";
+import Img1 from "../img/img6a.png";
+import Img2 from "../img/img6b.png";
+import Img3 from "../img/img6c.png";
 import contactimg from "../img/contactimg.png";
 import footerlogo from "../img/footerlogo.png";
 import { BsTelephone } from "react-icons/bs";
@@ -142,16 +142,28 @@ const HomePage = () => {
                 data-aos-duration="3000"
                 className="img1"
               >
-                <img className="img-fluid" src={Img1} alt="Rounded img" />
-                <p className="fs-3 text-center">Enyesi Oni</p>
-                <p className="text-center fs-5 small">Vision Bearer</p>
+                <img
+                  className="img-fluid"
+                  width={"150px"}
+                  src={Img1}
+                  alt="Rounded img"
+                />
+                <p className="fs-3 text-center">Enyei Oshi</p>
+                <p className="text-center fs-5 small">Convener</p>
               </div>
               <div
                 data-aos="zoom-in-up"
                 data-aos-duration="3000"
                 className="img1"
               >
-                <img className="img-fluid" src={Img2} alt="Rounded img" />
+                <div>
+                  <img
+                    className="img-fluid"
+                    width={"150px"}
+                    src={Img2}
+                    alt="Rounded img"
+                  />
+                </div>
                 <p className="fs-3 text-center">Gabby Ed</p>
                 <p className="text-center fs-5 small">Volunteer</p>
               </div>
@@ -160,8 +172,15 @@ const HomePage = () => {
                 data-aos-duration="3000"
                 className="img1"
               >
-                <img className="img-fluid" src={Img3} alt="Rounded img" />
-                <p className="fs-3 text-center">David Ubu</p>
+                <div>
+                  <img
+                    className="img-fluid"
+                    width={"150px"}
+                    src={Img3}
+                    alt="Rounded img"
+                  />
+                </div>
+                <p className="fs-3 text-center">Ante Joseph</p>
                 <p className="text-center fs-5 small"> Mentor</p>
               </div>
             </div>
