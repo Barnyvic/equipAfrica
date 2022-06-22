@@ -35,6 +35,9 @@
         @media screen and (max-width: 450px) {
           font-size: 1.5rem;
         }
+        @media screen and (max-width: 360px) {
+          width: 40ch;
+        }
         @media screen and (max-width: 300px) {
           width: 30ch;
         }
