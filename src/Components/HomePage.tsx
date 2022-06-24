@@ -252,23 +252,18 @@ const HomePage = () => {
             <div className="footerlist">
               <ul>
                 <li className="fs-5">
-                  <a href="/" className="text-uppercase">
+                  <a href="#Home" className="text-uppercase">
                     Home
                   </a>
                 </li>
                 <li className="fs-5">
-                  <a href="/" className="text-uppercase">
+                  <a href="#About" className="text-uppercase">
                     About-us
                   </a>
                 </li>
                 <li className="fs-5">
-                  <a href="/" className="text-uppercase">
+                  <a href="#Services" className="text-uppercase">
                     Services
-                  </a>
-                </li>
-                <li className="fs-5">
-                  <a href="/" className="text-uppercase">
-                    Tasks
                   </a>
                 </li>
                 <li className="fs-5">
