@@ -45,8 +45,8 @@ const HomePage = () => {
             >
               <p className="fs-3">
                 At equip Africa, we are building a community of Arican
-                Changemaker sequipped with the needed resources such as access
-                to opportunities,mentorshipand guidance to transform Africa.
+                Changemakers equipped with the needed resources such as access
+                to opportunities, mentorshipand guidance to transform Africa.
                 with Equip Africa, youth gain access to information through
                 daily updates, mentorships through booking free weekly
                 mentorship sessions with various African Change-leaders across
@@ -144,11 +144,11 @@ const HomePage = () => {
               >
                 <img
                   className="img-fluid"
-                  width={"150px"}
+                  width={"200px"}
                   src={Img1}
                   alt="Rounded img"
                 />
-                <p className="fs-3 text-center">Enyei Oshi</p>
+                <p className="fs-3 text-center">Eneyi Oshi</p>
                 <p className="text-center fs-5 small">Convener</p>
               </div>
               <div
@@ -159,13 +159,13 @@ const HomePage = () => {
                 <div>
                   <img
                     className="img-fluid"
-                    width={"150px"}
+                    width={"200px"}
                     src={Img2}
                     alt="Rounded img"
                   />
                 </div>
-                <p className="fs-3 text-center">Gabby Ed</p>
-                <p className="text-center fs-5 small">Volunteer</p>
+                <p className="fs-3 text-center">Samson Ogbole</p>
+                <p className="text-center fs-5 small">Mentor</p>
               </div>
               <div
                 data-aos="zoom-in-up"
@@ -175,7 +175,7 @@ const HomePage = () => {
                 <div>
                   <img
                     className="img-fluid"
-                    width={"150px"}
+                    width={"200px"}
                     src={Img3}
                     alt="Rounded img"
                   />
@@ -202,14 +202,14 @@ const HomePage = () => {
             <div className="join">
               <div className="joinContent">
                 <p className="text-center  text-bold">
-                  <span className="text-primary"> Sign up </span>
+                  <span> Sign up </span>
                   or Login
                 </p>
               </div>
               <form data-aos="zoom-in-up" data-aos-duration="1000">
                 <div className="user-box">
                   <input type="text" name="" required />
-                  <label htmlFor="Name">FullName</label>
+                  <label htmlFor="Name">Full-Name</label>
                 </div>
                 <div className="user-box">
                   <input type="email" required />
@@ -258,7 +258,7 @@ const HomePage = () => {
                 </li>
                 <li className="fs-5">
                   <a href="/" className="text-uppercase">
-                    Aboutus
+                    About-us
                   </a>
                 </li>
                 <li className="fs-5">
@@ -292,7 +292,7 @@ const HomePage = () => {
               <BsTelephone className="icon" />
             </div>
             <p className="fs-4">
-              Copyright@{new Date().getFullYear()}. All rights Reserved.
+              Copyright @ {new Date().getFullYear()}. All rights Reserved.
               equipAfrica.
             </p>
           </div>
