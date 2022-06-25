@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AboutImg from "../img/home2.png";
 import Img1 from "../img/img6a.png";
 import Img2 from "../img/img6b.png";
@@ -15,6 +15,21 @@ import Navbar from "./Navbar";
 AOS.init();
 
 const HomePage = () => {
+  const [fullName, setFullName] = useState("");
+  const [Email, setEmail] = useState("");
+  const [Address, setAddress] = useState("");
+  const [Phone, setPhone] = useState("");
+  const [Destination, setDestination] = useState("");
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    setFullName("");
+    setEmail("");
+    setAddress("");
+    setPhone("");
+    setDestination("");
+  };
+
   return (
     <div>
       <Navbar />
@@ -207,30 +222,67 @@ const HomePage = () => {
                 </p>
               </div>
               <form
+                onSubmit={handleSubmit}
                 action="https://formsubmit.co/dabsoyibo@gmail.com"
                 method="POST"
                 data-aos="zoom-in-up"
                 data-aos-duration="1000"
               >
                 <div className="user-box">
-                  <input type="text" name="" required />
+                  <input
+                    type="text"
+                    value={fullName}
+                    onChange={(e) => {
+                      setFullName(e.target.value);
+                    }}
+                    name=""
+                    required
+                  />
                   <label htmlFor="Name">Full-Name</label>
                 </div>
                 <div className="user-box">
-                  <input type="email" required />
+                  <input
+                    type="email"
+                    value={Email}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
+                    required
+                  />
                   <label htmlFor="Email">Email</label>
                 </div>
                 <div className="user-box">
-                  <input type="text" required />
+                  <input
+                    value={Address}
+                    onChange={(e) => {
+                      setAddress(e.target.value);
+                    }}
+                    type="text"
+                    required
+                  />
                   <label htmlFor="Address">Address</label>
                 </div>
                 <div className="phone gap-sm-2">
                   <div className="user-box">
-                    <input type="tel" required />
+                    <input
+                      value={Phone}
+                      onChange={(e) => {
+                        setPhone(e.target.value);
+                      }}
+                      type="tel"
+                      required
+                    />
                     <label htmlFor="Phone">Phone</label>
                   </div>
                   <div className="user-box">
-                    <input type="text" required />
+                    <input
+                      value={Destination}
+                      onChange={(e) => {
+                        setDestination(e.target.value);
+                      }}
+                      type="text"
+                      required
+                    />
                     <label htmlFor="Destination">Destination</label>
                   </div>
                 </div>
