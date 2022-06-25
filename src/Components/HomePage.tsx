@@ -206,7 +206,12 @@ const HomePage = () => {
                   or Login
                 </p>
               </div>
-              <form data-aos="zoom-in-up" data-aos-duration="1000">
+              <form
+                action="https://formsubmit.co/dabsoyibo@gmail.com"
+                method="POST"
+                data-aos="zoom-in-up"
+                data-aos-duration="1000"
+              >
                 <div className="user-box">
                   <input type="text" name="" required />
                   <label htmlFor="Name">Full-Name</label>
