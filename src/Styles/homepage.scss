@@ -1,25 +1,32 @@
 .home1 {
-  background: url("../img/home2bg.png") no-repeat center center/cover;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../img/home2bg.png") no-repeat center center/cover;
   background-position: center;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   .home1Container {
     padding: 1rem 0;
     width: 100%;
     margin-top: 4rem;
     .home1content {
       width: 100%;
-      margin-top: 5rem;
+      margin-top: 9rem;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       justify-content: center;
+      background: rgba($color: #000000, $alpha: 0.1,);
+      text-align: center;
+
+      @media screen and (max-width: 578px) {
+          margin-top: 5rem;
+          align-items: left;
+        }
       h1 {
         color: #ff0606;
         font-size: 5.37rem;
         margin-bottom: 1rem;
-        @media screen and (max-width: 540px) {
-          font-size: 4.3rem;
+        @media screen and (max-width: 578px) {
+          font-size: 3rem;
         }
         @media screen and (max-width: 300px) {
           font-size: 3.3rem;
@@ -69,12 +76,18 @@
           font-size: 1.4rem;
         }
       }
+      .h1-btn:hover {
+        background: #064103;
+        transition: 0.2s ease-in-out;
+      }
     }
   }
 }
 .home2 {
   background: #fbf7f7;
   .aboutContainer {
+    position: relative;
+    top: 7rem;
     h1 {
       color: #ff0606;
     }
@@ -86,11 +99,20 @@
         }
       }
     }
+    .AboutImgContainer {
+      display: grid;
+      place-items: center;
+    }
   }
 }
 .home3 {
   background: #fbf7f7;
-  padding-bottom: 4rem;
+  padding-bottom: 10rem;
+
+  .service-content{
+    position: relative;
+    top: 8rem;
+  }
   h1 {
     color: #ff0606;
   }
@@ -249,8 +271,13 @@
           outline: none;
           border-radius: 5px;
           font-size: 1.5rem;
-          background: #ff0606;
+          background: #0f7909;
           color: #ffffff;
+        }
+
+        button:hover {
+        background: #063c03;
+        transition: 0.2s ease-in-out;
         }
       }
     }
