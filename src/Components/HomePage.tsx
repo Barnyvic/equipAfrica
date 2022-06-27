@@ -36,14 +36,14 @@ const HomePage = () => {
       <div id="Home" className="home1">
         <div className="home1Container">
           <div className="container home1content p-3">
-            <h1 className="font-weight-bold h1">equipAFRICA</h1>
+            <h1 className="font-weight-bold h1">Raising African Changemakers</h1>
             <p className="b-2">Business. Opportunities. Mentorship</p>
             <p className="h1-text">
               Be a part of Africa’s fastest growing community of experts, meet
               experts, build connections, grab opportunities and become a better
               person
             </p>
-            <button className="btn h1-btn btn-success"> get started</button>
+            <a href="#Join"><button className="btn h1-btn btn-success">Apply Here</button></a>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@ const HomePage = () => {
         </div>
       </div>
       <div id="Services" className="home3">
-        <div className="container p-3">
+        <div className="service-content container p-3">
           <h1 className="text-center text-uppercase font-weight-bold h1 mb-5">
             Services
           </h1>
