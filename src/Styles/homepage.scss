@@ -3,6 +3,10 @@
 body {
   font-family: 'Nunito', sans-serif !important;
 }
+*{
+  box-sizing: border-box;
+  border: 1px solid red;
+}
 
 .home1 {
   background: url("../img/heroImage.jpg") no-repeat center center/cover;
@@ -275,7 +279,6 @@ body {
         gap: 2rem;
 
         @media screen and (max-width:540px) {
-          width: 100%;
           font-size: 0.9rem !important;
         }
         li {

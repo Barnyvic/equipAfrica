@@ -221,7 +221,7 @@ const HomePage = () => {
                     <button className="btn-success btn-lg border-none">
                       <a
                         className="text-white text-decoration-none"
-                        href="https://lnkiy.in/join-equipAfrica"
+                        href="http://lnkiy.in/join-equipAfrica"
                         target="_blanc"
                       >
                         Join Us
