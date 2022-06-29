@@ -1,13 +1,13 @@
-import React, { useState } from "react";
 import AboutImg from "../img/home2.png";
 import Img1 from "../img/img6a.png";
 import Img2 from "../img/img6b.png";
 import Img3 from "../img/img6c.png";
 import contactimg from "../img/contactimg.png";
 import footerlogo from "../img/footerlogo.png";
-import { BsTelephone } from "react-icons/bs";
-import { MdOutlineForwardToInbox } from "react-icons/md";
-import { MdOutlineLocationOn } from "react-icons/md";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { brands } from '@fortawesome/fontawesome-svg-core/import.macro';
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "./Navbar";
@@ -15,35 +15,24 @@ import Navbar from "./Navbar";
 AOS.init();
 
 const HomePage = () => {
-  const [fullName, setFullName] = useState("");
-  const [Email, setEmail] = useState("");
-  const [Address, setAddress] = useState("");
-  const [Phone, setPhone] = useState("");
-  const [Destination, setDestination] = useState("");
-
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    setFullName("");
-    setEmail("");
-    setAddress("");
-    setPhone("");
-    setDestination("");
-  };
-
   return (
     <div>
       <Navbar />
       <div id="Home" className="home1">
         <div className="home1Container">
           <div className="container home1content p-3">
-            <h1 className="font-weight-bold h1">Raising African Changemakers</h1>
+            <h1 className="font-weight-bold h1">
+              Raising African Changemakers
+            </h1>
             <p className="b-2">Business. Opportunities. Mentorship</p>
             <p className="h1-text">
               Be a part of Africa’s fastest growing community of experts, meet
               experts, build connections, grab opportunities and become a better
               person
             </p>
-            <a href="#Join"><button className="btn h1-btn btn-success">Apply Here</button></a>
+            <a href="#Join">
+              <button className="btn h1-btn btn-success">Apply Here</button>
+            </a>
           </div>
         </div>
       </div>
@@ -146,8 +135,8 @@ const HomePage = () => {
             Meet our team
           </h1>
           <p className="text-center fs-3">
-            The equipAfrica team is a functional community comprising of the
-            Vision Bearer, Volunteers, Country Reps and Mentors. We believe in
+            The equipAfrica team is an online community comprising of the Vision
+            Bearer, Volunteers, Country Reps and Mentors. We believe in
             Dedication, Passion and Consistency as key to achieving our vision.
           </p>
           <div className="hom4-img-Container p-2">
@@ -217,85 +206,30 @@ const HomePage = () => {
             <div className="join">
               <div className="joinContent">
                 <p className="text-center  text-bold">
-                  <span> Sign up </span>
-                  or Login
+                  <span> The Time is Now! </span>
                 </p>
+                <div className="writeups mt-5">
+                  <p className="text-center">
+                    Equip Africa is building a comunity of African changemakers
+                    equipped with the needed resources such as access to
+                    opportunities, mentorship and guidance to transforms Africa.
+                  </p>
+                  <p className="text-center">
+                    Here's your chance to get equipped to become an Equipper!
+                  </p>
+                  <div className="text-center btn-block rubber">
+                    <button className="btn-success btn-lg border-none">
+                      <a
+                        className="text-white text-decoration-none"
+                        href="https://lnkiy.in/join-equipAfrica"
+                        target="_blanc"
+                      >
+                        Join Us
+                      </a>
+                    </button>
+                  </div>
+                </div>
               </div>
-              <form
-                onSubmit={handleSubmit}
-                action="https://formsubmit.co/dabsoyibo@gmail.com"
-                method="POST"
-                data-aos="zoom-in-up"
-                data-aos-duration="1000"
-              >
-                <div className="user-box">
-                  <input
-                    type="text"
-                    value={fullName}
-                    onChange={(e) => {
-                      setFullName(e.target.value);
-                    }}
-                    name=""
-                    required
-                  />
-                  <label htmlFor="Name">Full-Name</label>
-                </div>
-                <div className="user-box">
-                  <input
-                    type="email"
-                    value={Email}
-                    onChange={(e) => {
-                      setEmail(e.target.value);
-                    }}
-                    required
-                  />
-                  <label htmlFor="Email">Email</label>
-                </div>
-                <div className="user-box">
-                  <input
-                    value={Address}
-                    onChange={(e) => {
-                      setAddress(e.target.value);
-                    }}
-                    type="text"
-                    required
-                  />
-                  <label htmlFor="Address">Address</label>
-                </div>
-                <div className="phone gap-sm-2">
-                  <div className="user-box">
-                    <input
-                      value={Phone}
-                      onChange={(e) => {
-                        setPhone(e.target.value);
-                      }}
-                      type="tel"
-                      required
-                    />
-                    <label htmlFor="Phone">Phone</label>
-                  </div>
-                  <div className="user-box">
-                    <input
-                      value={Destination}
-                      onChange={(e) => {
-                        setDestination(e.target.value);
-                      }}
-                      type="text"
-                      required
-                    />
-                    <label htmlFor="Destination">Destination</label>
-                  </div>
-                </div>
-                <div className="condition">
-                  <input type="checkbox" />{" "}
-                  <small>
-                    I, hereby agree to privacy policy, terms and conditions
-                  </small>
-                </div>
-                <div className="btnContact">
-                  <button>Submit</button>
-                </div>
-              </form>
             </div>
           </div>
         </div>
@@ -339,9 +273,22 @@ const HomePage = () => {
           <div className="border mb-5" />
           <div className="end text-center">
             <div className="socal">
-              <MdOutlineForwardToInbox className="icon" />
-              <MdOutlineLocationOn className="icon" />
-              <BsTelephone className="icon" />
+              <a
+                href="https://facebook.com/groups/347902206767013/?ref=share"
+                target="_blanc"
+              >
+                <FontAwesomeIcon icon={brands("facebook")} />
+              </a>
+              <a href="https://linkedin.com/groups/14097541" target="_blanc">
+                <FontAwesomeIcon icon={brands("linkedin")} />
+              </a>
+
+              <a
+                href="https://instagram.com/we_equipafrica?igshid=YmMyMTA2M2Y"
+                target="_blanc"
+              >
+                <FontAwesomeIcon icon={brands("instagram")} />
+              </a>
             </div>
             <p className="fs-4">
               Copyright @ {new Date().getFullYear()}. All rights Reserved.
